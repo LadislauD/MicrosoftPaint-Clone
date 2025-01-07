@@ -1,0 +1,305 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+/*minimenu-bar*/
+.optionMenu{
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-button{
+    border: 1px solid black;
+}
+
+.optionMenu div{
+    display: flex;
+    padding: 0px;
+}
+
+.opcaoHome{
+    background-color: #8fdeee;
+    cursor: pointer;
+}
+
+.optionMenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.optionMenu ul{
+    display: inline;
+    list-style: none;
+    padding:7px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.optionMenu ul:first-child{
+    background-color: gray;
+}
+
+.optionMenu ul ul:nth-child(1){
+    background-color: gray;
+    border-top: 1px solid black;
+}
+
+.optionMenu ul li ul li:hover{
+    background-color: #4287d6;
+    cursor: pointer;
+}
+
+.optionMenu ul li{
+    position: relative;
+}
+
+.optionMenu ul li ul{
+    display: none;
+    background-color: red;
+    position: absolute;
+    top:23px;
+    left: 1px;
+    width: 100px;
+}
+#open{
+    cursor:pointer;
+}
+/*MenuBar*/
+.menuPaint{
+    display: flex;
+    background-color:#d7eef0;
+    height: 128px;
+    border-top: 1px solid black;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+    width: 100%;
+}
+
+#alertMessage{
+    color:red;
+}
+
+.menuPaint div{
+    border-right: 1px solid black;
+    /*height: 80%;*/
+}
+
+.menuPaint div:nth-child(5){
+    border-right: 1px solid black;
+    height: 90%;
+}
+/*Clipboard and Images*/
+.board{
+    display: grid;
+    grid-template-columns: 60px 60px;
+    padding: 10px 15px 0 10px;
+    column-gap: 10px;
+    text-align: center;
+}
+
+.board div{
+    display: grid;
+    border: none;
+    height: 60px;
+}
+
+.paste, .select{
+    text-align: center;
+}
+
+.paste p, .select p{
+    margin: 0;
+}
+
+.paste, .select{
+    height: 70px;
+}
+
+.selectDiv{
+    width: 70px;
+}
+/*tools*/
+.tools{
+    display: flex;
+    flex-wrap: wrap;
+    width: 6%;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+.tools button{
+    width: 30px;
+    height: 30px;
+    border-radius: none;
+}
+
+.tools p{
+    padding-top: 8px;
+    align-self: flex-start;
+    margin: auto;
+}
+/*Brushes*/
+.brushes, .colors span, .size{
+    padding: 5px;
+    text-align: center;
+}
+
+.brushes p{
+    margin: auto;
+    padding-top: 35px;
+}
+
+.brushes button, .colors span button, .allColors div button, .size button{
+    width: 60px;
+    height: 60px;
+}
+
+.brushes button{
+    margin-top: 4px;
+    padding: 0;
+}
+/*size*/
+.size ul{
+    background-color: red;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1;
+    display: none;
+}
+
+.size p{
+    margin:auto;
+}
+
+.size button{
+    margin-top: 5px;
+}
+/*Shapes*/
+.shapes{
+    display: grid;
+    padding: 10px;
+}
+
+.shapes div:first-child{
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+.shapes button{
+    width: 30px;
+    height: 30px;
+}
+
+.shapes p{
+    margin: auto;
+    padding-top: 35px;
+    padding-left: 8px;
+}
+
+.shapes div{
+    border: none;
+}
+
+.shapes div:nth-child(2){
+    text-align: left;
+}
+
+.shapes div:nth-child(2) span{
+    padding-left: 5px;
+}
+/*Colors*/
+.colors{
+    display: flex;
+    border:none;
+}
+
+.allColors button, #color1, #color2{
+    border: 1px solid black;
+}
+
+#color1{
+    background-color: black;
+}
+
+#color2{
+    background-color: white;
+}
+
+.colors div{
+    border:none;
+}
+
+.colors span button{
+    margin-top: 5px;
+}
+
+.colors span p{
+    margin: auto;
+    text-align:center;
+    width: 60px;
+}
+
+.allColors{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 33%;
+    height: 75%;
+    column-gap: 1px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.allColors p{
+    padding-top: 5px;
+    align-self: center;
+}
+
+.allColors button{
+    width: 30px;
+    height: 30px;
+}
+
+.allColors div{
+    border: none;
+}
+
+/*icons*/
+.iconSize{
+    width: 20px;
+    height: 20px;
+}
+
+.board p, .shapes p{
+    display: inline;
+    margin:auto;
+    width: 125px;
+}
+/*CanvasPart*/
+.workStation{
+    border: 1px solid black;
+    margin: 0;
+    cursor: crosshair;
+    width: 1835px;
+    z-index: -1;
+}
+/*inputFileStyle*/
+.colors input[type=file]{
+    display: none;
+}
+
+#createAccount{
+    cursor: pointer;
+}

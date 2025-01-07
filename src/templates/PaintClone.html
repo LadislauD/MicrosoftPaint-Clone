@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Paint Clone</title>
+    <link rel="stylesheet" href="../static/style/style.css">
+    <link rel="stylesheet" href="../static/style/coment.css">
+</head>
+<body>
+    <div class="optionMenu">
+        <div>
+            <ul id="opcaoFiles">
+                <li>
+                    Files
+                    <ul id="subMenuFiles">
+                        <li id = "novoDesenho">New</li>
+                        <li id="open">Open</a></li>
+                        <li><a href="#" id="canvaSave" download="PaintMade">Download</a></li>
+                        <li>Download As</li>
+                        <li id ="share-drawing">Share drawing</li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="opcaoHome">
+                    <li id = "home-hub">Home</li>
+            </ul>
+        </div>
+
+        <div class="commentSection" id="comentario">
+            
+            <button class="comment-button">
+                Comments
+            </button>
+
+            <div class="painel" id="coment">
+                <h2>Comentarios</h2>
+                <div class="comments">
+                </div>
+
+                <div class="writeComent">
+                    <input type="text" class="usercoment" placeholder="Comente no Desenho!"> 
+                    <button id="postar">Comentar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menuId" class="menuPaint">
+        <div class="tools">
+            <button id="pencil"><img src="../static/PaintCloneIcons/ToolsIcon/pencil.png" alt="" width="15px" height="15px"></button>
+            <button id="balde"><img src="../static/PaintCloneIcons/ToolsIcon/paint-bucket.png" alt="" width="15px" height="15px"></button>
+            <button id="textBox"><b>A</b></button>
+            <button id="rubber"><img src="../static/PaintCloneIcons/ToolsIcon/eraser.png" alt="" width="15px" height="15px"></button>
+            <button id="extrColor"><img src="../static/PaintCloneIcons/ToolsIcon/color-picker.png" alt="" width="15px" height="15px"></button>
+            <button id="magicGlass"><img src="../static/PaintCloneIcons/ToolsIcon/search.png" alt="" width="15px" height="15px"></button>
+            <p>Tools</p>
+            <!--Tools-->
+        </div>
+
+        <div class="brushes">
+            <button id="brushes">
+                <img src="../static/PaintCloneIcons/ShapesIcon/brush-stroke.png" alt="" width="35px" height="35px">
+            </button>
+            <p>Brushes</p>
+            <!--Tools-->
+        </div>
+        
+        <div class ="shapes">
+            <div>
+                <button id="lineShape">
+                    <img src="../static/PaintCloneIcons/ShapesIcon/diagonal-line.png" alt="" width="15px" height="15px">
+                </button>
+
+                <button id = curveLine>
+                    <img src="../static/PaintCloneIcons/ShapesIcon/circumflex-accent.png" alt="" width="15px" height="15px">
+                </button>
+
+                <button id = ovalShape>
+                    <img src="../static/PaintCloneIcons/ShapesIcon/ellipse.png" alt="" width="15px" height="15px">
+                </button>
+
+                <button id="rectShape">
+                    <img src="../static/PaintCloneIcons/ShapesIcon/square.png" alt="" width="15px" height="15px">
+                </button>
+
+                <button id="roundedRect">
+                    <img src="../static/PaintCloneIcons/ShapesIcon/rounded-rectangle.png" alt="" width="17px" height="18px">
+                </button>
+
+                <button id="unifiedLine">
+                    <img src="../static/PaintCloneIcons/ShapesIcon/l.png" alt="" width="17px" height="18px">
+                </button>
+            </div>
+            
+            <p>Shapes</p>
+        </div>
+
+        <div class="colors" style="border-right:none">
+            <span>
+                <button id="color1"></button>
+                <p>Color 1</p>
+            </span>
+            
+            <span>
+                <button id="color2"></button>
+                <p>Color 2</p>
+            </span>
+            
+            <div class="allColors" id="coloracao">
+            </div>
+            <input type="file" value="add Img" id="addImg" accept="image/jpeg, image/png">
+        </div>
+    </div>
+    <canvas class ="workStation"></canvas>
+    <script src="../static/PaintFunctionality/script.js"></script>
+    <script src="../static/PaintFunctionality/shapesFunctionality.js"></script>
+    <script src="../static/PaintFunctionality/optionFunctionality.js"></script>
+    <script src="../static/comentsec.js"></script>
+</body>
+</html>
