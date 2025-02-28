@@ -14,7 +14,7 @@ Foi um desafio na qual aprendi muito usando JavaScript e Python, tive grandes di
 ## Instalação
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/LadislauD/MicrosoftPaint-Clone
    ```
 2. Acesse o diretório do projeto:
    ```sh
