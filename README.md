@@ -18,38 +18,38 @@ Foi um desafio na qual aprendi muito usando JavaScript e Python, tive grandes di
    ```
 2. Acesse o diretório do projeto:
    ```sh
-   cd nome-do-projeto
-   ```
-3. Instale as dependências:
+   cd ./src
+   ```   
+3. Active o environment (paintenv) do python
    ```sh
-   comando-de-instalacao
+   source .paintenv/bin/activate. 
    ```
-
+4. Instale as dependências:
+   ```sh
+   pip install -r requirements.txt.
+   npm install
+   ```
 ## Uso
 Instruções de como executar e utilizar o projeto.
-```sh
-comando-de-execucao
+```
+npm run dev
+python3 Application.py
 ```
 
 ## Estrutura do Projeto
 ```
 /
-|-- pasta1/
-|   |-- arquivo1
-|   |-- arquivo2
-|-- pasta2/
-|   |-- arquivo3
+|-- src/
+|   |-- templates/
+              |-- PaintClone.html
+              |-- PaintClone.html
+              |-- cadastro.html
+              |-- createAccount.html
+              |-- index.html
+              |-- painthob.html
+    |-- Application.py
+    |-- bdPaintClone.py
+    |-- bdpsql.py
+    |-- paintclonedb.py
 |-- README.md
 ```
-
-## Contribuição
-Se deseja contribuir, siga estes passos:
-1. Faça um fork do repositório.
-2. Crie uma branch com sua funcionalidade: `git checkout -b minha-feature`.
-3. Faça commit das suas alterações: `git commit -m 'Adicionando nova funcionalidade'`.
-4. Envie para a branch principal: `git push origin minha-feature`.
-5. Abra um Pull Request.
-
-## Licença
-Especifique a licença do projeto (Ex: MIT, Apache 2.0, GPL, etc.).
-
